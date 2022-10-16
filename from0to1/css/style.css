@@ -35,3 +35,23 @@ body {
 .svg-text {
   overflow: visible;
 }
+
+.rect {
+  stroke: brown;
+  stroke-width: 10px;
+  fill: none;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  transition: all 1.5s ease-in-out;
+}
+
+.svg-rect:hover .rect,
+.svg-circle:hover .circle{
+  stroke-dashoffset: 0;
+}
+
+.circle {
+  transition: all 1.5s ease-in-out;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+}
