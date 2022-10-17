@@ -40,18 +40,39 @@ body {
   stroke: brown;
   stroke-width: 10px;
   fill: none;
-  stroke-dasharray: 700;
-  stroke-dashoffset: 700;
-  transition: all 1.5s ease-in-out;
+  stroke-dasharray: 10 10;
+  stroke-dashoffset: 0;
+  transition: all 1.5s ease-in-out ;
 }
 
 .svg-rect:hover .rect,
-.svg-circle:hover .circle{
+.svg-circle:hover .circle,
+.apple:hover .apple-path {
+  /* stroke-dasharray: 314; */
   stroke-dashoffset: 0;
 }
 
 .circle {
+  transition: all 3.5s ease-in-out;
+  /* stroke-dasharray: 0;
+  stroke-dashoffset: 0; */
+}
+
+.apple-path {
+  fill: orange;
+  stroke-opacity: .5;
+  stroke: teal;
+  stroke-width: 10px;
   transition: all 1.5s ease-in-out;
-  stroke-dasharray: 314;
-  stroke-dashoffset: 314;
+  stroke-dasharray: 1910;
+  stroke-dashoffset: 1910;
+}
+
+/* .image {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+} */
+
+.image {
+  width: 800px;
+  clip-path: url(#apple);
 }
